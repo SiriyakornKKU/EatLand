@@ -1,0 +1,173 @@
+<!--Problem
+1.ยังไม่แยก File CSS
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body{
+    background-color: lightgray;
+  }
+  .user_profile_cap {
+    border: 1px solid #DDD;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+      overflow:hidden;
+  }
+
+  .user_profile_cover {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+          }
+
+  }
+
+  .user_profile_headline {
+    padding: 10px;
+  }
+  .user_profile_headline img{
+      border:1px solid #EEEEEE;
+      width:124px;
+      height:124px;
+      float:left;
+      margin:-90px 10px 0  0;
+      position:relative;
+      z-index:111;
+
+      background-color:white;
+  }
+  .user_profile_headline h2{
+      font-size: 25px;
+      margin:0;
+      padding:0;
+      font-weight:bold;
+      display:block;
+  }
+  .user_profile_headline span{
+      font-size:16px;
+      font-family:verdana;
+      color:gray;
+
+  }
+  .head-info{
+    font-weight: bold;
+  }
+  </style>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EAT LAND - หน้าหลัก</title>
+	<link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div style="border-bottom: 3px solid orange">
+	<div class="container">
+	<nav class="navbar navbar-toggleable-md navbar-light">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand mx-auto" href="#"><span style="font-style: italic;">EAT</span> <span style="color:orange;font-weight: bold">LAND</span></a>
+
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+	    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Disabled</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav>
+	</div>
+	</div>
+  <div class="container" style="margin-top: 10px; max-width: 850px">
+    <div class="row">
+      <header class="col">
+        <div class="user_profile_cap">
+              <div class="user_profile_cover" style="">
+                <img src="img/cover-img.jpg" alt="img" style="height: auto;width:100%"/>
+              </div>
+              <div class="user_profile_headline">
+                  <img src="img/plawan.jpg" alt="img"/>
+                  <h2>ชือร้านอาหาร</h2>
+                  <span>ประเภทร้านอาหาร</span>
+              </div>
+            </div>
+      </header>
+    </div>
+
+    <div id="info-resturant" class="card" style="margin-top: 10px">
+      <div class="card-block">
+      <div id="info-resturant-header">
+        <h4 style="font-weight: bold">ข้อมูลร้านค้า</h4>
+      </div>
+          <div class="row">
+            <div class="col" style="min-width: 300px;">
+              <div id="day-text">
+                <span id="day-text-explain" class="head-info">วันเปิดทำการ&nbsp: &nbsp</span><span id="day-text-details">จันทร์ - ศุกร์</span>
+              </div>
+                <div id="time-text">
+                  <span id="time-text-explain" class="head-info">เวลาเปิดทำการ&nbsp: &nbsp</span><span id="time-text-details">16.00-17.00น.</span>
+                </div>
+                <div id="place-text">
+                    <span id="place-text-explain" class="head-info">สถานที่&nbsp: &nbsp</span><span id="place-text-details">โนนม่วง หลังมอ มหาวิทยาลัยขอนแก่น</span>
+                </div>
+            </div>
+            <div class="col" style="min-width: 300px;">
+              <div id="tel-text">
+                <span id="tel-text-explain" class="head-info">เบอร์โทรติดต่อ&nbsp: &nbsp</span><span id="tel-text-details">081-23456789</span>
+              </div>
+              <div id="fb-text">
+                <span id="fb-text-explain" class="head-info">facebook&nbsp:&nbsp</span><span id="fb-text-details"><a href="#">facebook.com/EATLAND</a></span>
+              </div>
+              <div id="email-text">
+                <span id="email-text-explain" class="head-info">e-mail&nbsp:&nbsp</span><span id="email-text-details"><a href="#">eatland@gmail.com</a></span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 15px;">
+      <h4 style="font-weight: bold;">โปรโมชั่น</h4>
+      <div class="row">
+        <div class=" col-xs-12 col-sm-12 col-lg-6 col-md-6">
+          <div class="card" style="margin-top: 10px">
+            <img src="img/FirstImg.png" alt="">
+            <div class="card-block">
+              <div class="card-title">
+                <h5 class="head-info">โปรโมชั่น 1</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-12 col-lg-6 col-md-6">
+          <div class="card" style="margin-top: 10px">
+            <img src="img/FirstImg.png" alt="">
+            <div class="card-block">ทดสอบ</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
